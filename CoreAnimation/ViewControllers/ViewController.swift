@@ -39,19 +39,19 @@ extension ViewController {
         
         let someCurve = AnimationCurve.allCases.randomElement ()
         animationView.curve = someCurve?.rawValue ?? ""
-        infoLabels [1].text = "curve: \(someCurve? .rawValue ?? "")"
+        infoLabels [1].text = "Curve is \(someCurve? .rawValue ?? "")"
         
         let force = round( (Double.random(in: 1...5) * 100)) / 100
         animationView.force = force
-        infoLabels[2].text = "force: \(force)"
+        infoLabels[2].text = "Force is  \(force)"
     
         let duration = round ((Double.random(in: 0.5...5) * 100)) / 100
         animationView.duration = duration
-        infoLabels[3].text = "duration: \(duration)"
+        infoLabels[3].text = "Duration is \(duration)"
         
         let delay = round( (Double.random(in: 0...5) * 100)) / 100
         animationView.force = delay
-        infoLabels[4].text = "delay: \(delay)"
+        infoLabels[4].text = "Delays is \(delay)"
         
         
         
